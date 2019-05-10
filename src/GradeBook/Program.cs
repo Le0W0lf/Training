@@ -8,15 +8,11 @@ namespace GradeBook
         
         static void Main(string[] args)
         {
-            Account acount = new Account();
-
-            acount.EvEnt += ShowMessage;
-            acount._Delegat += ShowMessage;
-
-            //acount._Event("qqq");
-            //acount._Delegat("qqq");
-
-            acount.Do("qqq");
+            ChildClass qqq = new ChildClass();
+            qqq.Add(1);
+            qqq.Add(2);
+            qqq.Add(3);
+            qqq.Add(4);
         }
         
         private static void ShowMessage(string message)
